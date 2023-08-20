@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import ActionButton from "../../shared/ui/button";
 import "./index.css";
 
 export default function StockData() {
@@ -35,14 +36,13 @@ export default function StockData() {
           value={inputDate}
           onChange={handleInputChange}
         />
-        <button 
-          className="" 
+        <ActionButton
           id="submit-button" 
           data-testid="submit-button"
           onClick={fetchStockData}
         >
           Search
-        </button>
+        </ActionButton>
       </section>
       {stockInfo ? (
         <ul className="mt-50 slide-up-fade-in styled" id="stockData" data-testid="stock-data">
