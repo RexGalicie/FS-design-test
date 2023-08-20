@@ -6,27 +6,8 @@ import ListItem from "../../shared/ui/list-item";
 import NotFound from "../../shared/ui/not-found";
 
 export default function StockData() {
-  const [inputDate, setInputDate] = useState('');  // to store input value
-  const [stockInfo, setStockInfo] = useState(null);  // to store fetched stock data
+  const { inputDate, setInputDate, stockInfo, retrieveStockData } = useStockData();
 
-  const handleInputChange = (e) => {
-    setInputDate(e.target.value);
-  };
-
-  const fetchStockData = async () => {
-    try {
-      const response = await fetch(`https://jsonmock.hackerrank.com/api/stocks?date=${inputDate}`);
-      const data = await response.json();
-      if (data && data.data && data.data.length > 0) {
-        setStockInfo(data.data[0]);
-      } else {
-        setStockInfo(null);
-      }
-    } catch (error) {
-      console.error("Error fetching stock data:", error);
-      setStockInfo(null);
-    }
-  };
   return (
     <div className="layout-column align-items-center mt-50">
       <section className="layout-row align-items-center justify-content-center">
@@ -35,12 +16,12 @@ export default function StockData() {
           id="app-input" 
           data-testid="app-input"
           value={inputDate}
-          onChange={handleInputChange}
+          onChange={(e) => setInputDate(e.target.value)}
         />
         <ActionButton
           id="submit-button" 
           data-testid="submit-button"
-          onClick={fetchStockData}
+          onClick={retrieveStockData}
         >
           Search
         </ActionButton>
