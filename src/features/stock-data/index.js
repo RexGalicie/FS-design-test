@@ -4,6 +4,7 @@ import Input from "../../shared/ui/input";
 import InfoList from "../../shared/ui/list";
 import ListItem from "../../shared/ui/list-item";
 import NotFound from "../../shared/ui/not-found";
+import { useStockData } from "./hooks";
 
 export default function StockData() {
   const { inputDate, setInputDate, stockInfo, retrieveStockData } = useStockData();

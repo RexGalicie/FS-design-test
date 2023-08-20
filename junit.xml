@@ -1,13 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="4" failures="0" errors="0" time="2.009">
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2023-08-20T11:40:06" time="1.166" tests="4">
-    <testcase classname=" initial UI is rendered as expected" name=" initial UI is rendered as expected" time="0.061">
+<testsuites name="jest tests" tests="4" failures="4" errors="0" time="3.102">
+  <testsuite name="undefined" errors="0" failures="4" skipped="0" timestamp="2023-08-20T11:47:11" time="2.279" tests="4">
+    <testcase classname=" initial UI is rendered as expected" name=" initial UI is rendered as expected" time="0.512">
+      <failure>ReferenceError: useStockData is not defined
+    at StockData (/projects/challenge/src/features/stock-data/index.js:9:69)
+    at renderWithHooks (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:20074:13)
+    at beginWork (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:21587:16)
+    at beginWork$1 (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+    at performUnitOfWork (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+    at workLoopSync (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+    at renderRootSync (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:25750:22)
+    at flushActQueue (/projects/challenge/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/projects/challenge/node_modules/react/cjs/react.development.js:2582:11)
+    at /projects/challenge/node_modules/@testing-library/react/dist/act-compat.js:46:25
+    at renderRoot (/projects/challenge/node_modules/@testing-library/react/dist/pure.js:161:26)
+    at render (/projects/challenge/node_modules/@testing-library/react/dist/pure.js:247:10)
+    at renderApp (/projects/challenge/src/App.test.js:7:31)
+    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:15:38)
+    at Promise.then.completed (/projects/challenge/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/projects/challenge/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/projects/challenge/node_modules/jest-circus/build/run.js:218:40)
+    at _runTest (/projects/challenge/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:66:9)
+    at run (/projects/challenge/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/projects/challenge/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/projects/challenge/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/projects/challenge/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/projects/challenge/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/projects/challenge/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/projects/challenge/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/projects/challenge/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/projects/challenge/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
     </testcase>
-    <testcase classname=" search is made on by clicking on search button and no results found" name=" search is made on by clicking on search button and no results found" time="0.064">
+    <testcase classname=" search is made on by clicking on search button and no results found" name=" search is made on by clicking on search button and no results found" time="0.085">
+      <failure>ReferenceError: useStockData is not defined
+    at StockData (/projects/challenge/src/features/stock-data/index.js:9:69)
+    at renderWithHooks (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:20074:13)
+    at beginWork (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:21587:16)
+    at beginWork$1 (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+    at performUnitOfWork (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+    at workLoopSync (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+    at renderRootSync (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:25750:22)
+    at flushActQueue (/projects/challenge/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/projects/challenge/node_modules/react/cjs/react.development.js:2582:11)
+    at /projects/challenge/node_modules/@testing-library/react/dist/act-compat.js:46:25
+    at renderRoot (/projects/challenge/node_modules/@testing-library/react/dist/pure.js:161:26)
+    at render (/projects/challenge/node_modules/@testing-library/react/dist/pure.js:247:10)
+    at renderApp (/projects/challenge/src/App.test.js:7:31)
+    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:23:38)
+    at Promise.then.completed (/projects/challenge/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/projects/challenge/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/projects/challenge/node_modules/jest-circus/build/run.js:218:40)
+    at _runTest (/projects/challenge/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:66:9)
+    at run (/projects/challenge/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/projects/challenge/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/projects/challenge/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/projects/challenge/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/projects/challenge/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/projects/challenge/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/projects/challenge/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/projects/challenge/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/projects/challenge/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
     </testcase>
-    <testcase classname=" search is made on by clicking on search button and result found - test 1" name=" search is made on by clicking on search button and result found - test 1" time="0.116">
+    <testcase classname=" search is made on by clicking on search button and result found - test 1" name=" search is made on by clicking on search button and result found - test 1" time="0.037">
+      <failure>ReferenceError: useStockData is not defined
+    at StockData (/projects/challenge/src/features/stock-data/index.js:9:69)
+    at renderWithHooks (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:20074:13)
+    at beginWork (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:21587:16)
+    at beginWork$1 (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+    at performUnitOfWork (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+    at workLoopSync (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+    at renderRootSync (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:25750:22)
+    at flushActQueue (/projects/challenge/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/projects/challenge/node_modules/react/cjs/react.development.js:2582:11)
+    at /projects/challenge/node_modules/@testing-library/react/dist/act-compat.js:46:25
+    at renderRoot (/projects/challenge/node_modules/@testing-library/react/dist/pure.js:161:26)
+    at render (/projects/challenge/node_modules/@testing-library/react/dist/pure.js:247:10)
+    at renderApp (/projects/challenge/src/App.test.js:7:31)
+    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:42:38)
+    at Promise.then.completed (/projects/challenge/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/projects/challenge/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/projects/challenge/node_modules/jest-circus/build/run.js:218:40)
+    at _runTest (/projects/challenge/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:66:9)
+    at run (/projects/challenge/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/projects/challenge/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/projects/challenge/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/projects/challenge/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/projects/challenge/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/projects/challenge/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/projects/challenge/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/projects/challenge/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/projects/challenge/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
     </testcase>
-    <testcase classname=" search is made on by clicking on search button and result found - test 2" name=" search is made on by clicking on search button and result found - test 2" time="0.027">
+    <testcase classname=" search is made on by clicking on search button and result found - test 2" name=" search is made on by clicking on search button and result found - test 2" time="0.043">
+      <failure>ReferenceError: useStockData is not defined
+    at StockData (/projects/challenge/src/features/stock-data/index.js:9:69)
+    at renderWithHooks (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:20074:13)
+    at beginWork (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:21587:16)
+    at beginWork$1 (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+    at performUnitOfWork (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+    at workLoopSync (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+    at renderRootSync (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:25750:22)
+    at flushActQueue (/projects/challenge/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/projects/challenge/node_modules/react/cjs/react.development.js:2582:11)
+    at /projects/challenge/node_modules/@testing-library/react/dist/act-compat.js:46:25
+    at renderRoot (/projects/challenge/node_modules/@testing-library/react/dist/pure.js:161:26)
+    at render (/projects/challenge/node_modules/@testing-library/react/dist/pure.js:247:10)
+    at renderApp (/projects/challenge/src/App.test.js:7:31)
+    at Object.&lt;anonymous&gt; (/projects/challenge/src/App.test.js:71:38)
+    at Promise.then.completed (/projects/challenge/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/projects/challenge/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/projects/challenge/node_modules/jest-circus/build/run.js:218:40)
+    at _runTest (/projects/challenge/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/projects/challenge/node_modules/jest-circus/build/run.js:66:9)
+    at run (/projects/challenge/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/projects/challenge/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/projects/challenge/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/projects/challenge/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/projects/challenge/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/projects/challenge/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/projects/challenge/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/projects/challenge/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/projects/challenge/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/projects/challenge/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
     </testcase>
   </testsuite>
 </testsuites>
