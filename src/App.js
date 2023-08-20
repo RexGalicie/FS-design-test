@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import 'h8k-components';
-import StockData from './components/stock-data/index.js';
+import StockData from './features/stock-data';
 
 const title = "Stock Data";
 
