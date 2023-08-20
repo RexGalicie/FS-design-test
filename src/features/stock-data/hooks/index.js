@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { fetchStockData } from '../api/fetchStock';
+import { fetchStockData } from '../api';
 
 export const useStockData = () => {
   const [inputDate, setInputDate] = useState('');
