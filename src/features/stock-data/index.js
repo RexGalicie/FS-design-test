@@ -23,6 +23,7 @@ export default function StockData() {
           id="submit-button" 
           data-testid="submit-button"
           onClick={retrieveStockData}
+          disabled={!inputDate}
         >
           Search
         </ActionButton>
