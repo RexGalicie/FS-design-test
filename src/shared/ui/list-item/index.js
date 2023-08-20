@@ -1,8 +1,8 @@
 import React from "react";
 
-function ListItem({ label, value, ...rest }) {
+function ListItem({ children }) {
   return (
-    <li className="py-10" {...rest}>{label}: {value}</li>
+    <li className="py-10">{children}</li>
   );
 }
 
