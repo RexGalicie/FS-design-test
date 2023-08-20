@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import ActionButton from "../../shared/ui/button";
+import InfoList from "../../shared/ui/list";
 import "./index.css";
 
 export default function StockData() {
@@ -45,12 +46,12 @@ export default function StockData() {
         </ActionButton>
       </section>
       {stockInfo ? (
-        <ul className="mt-50 slide-up-fade-in styled" id="stockData" data-testid="stock-data">
+        <InfoList className="mt-50 slide-up-fade-in styled" id="stockData" data-testid="stock-data">
           <li className="py-10">Open: {stockInfo.open}</li>
           <li className="py-10">Close: {stockInfo.close}</li>
           <li className="py-10">High: {stockInfo.high}</li>
           <li className="py-10">Low: {stockInfo.low}</li>
-        </ul>
+        </InfoList>
       ) : inputDate ? (
         <div className="mt-50 slide-up-fade-in" id="no-result" data-testid="no-result">
           No Results Found
