@@ -1,6 +1,9 @@
 import React, {useState} from "react";
 import ActionButton from "../../shared/ui/button";
+import Input from "../../shared/ui/input";
 import InfoList from "../../shared/ui/list";
+import ListItem from "../../shared/ui/list-item";
+import NotFound from "../../shared/ui/not-found";
 import "./index.css";
 
 export default function StockData() {
@@ -28,9 +31,7 @@ export default function StockData() {
   return (
     <div className="layout-column align-items-center mt-50">
       <section className="layout-row align-items-center justify-content-center">
-      <input 
-          type="text" 
-          className="large" 
+      <Input
           placeholder="5-January-2000" 
           id="app-input" 
           data-testid="app-input"
@@ -46,16 +47,16 @@ export default function StockData() {
         </ActionButton>
       </section>
       {stockInfo ? (
-        <InfoList className="mt-50 slide-up-fade-in styled" id="stockData" data-testid="stock-data">
-          <li className="py-10">Open: {stockInfo.open}</li>
-          <li className="py-10">Close: {stockInfo.close}</li>
-          <li className="py-10">High: {stockInfo.high}</li>
-          <li className="py-10">Low: {stockInfo.low}</li>
+        <InfoList id="stockData" data-testid="stock-data">
+          <ListItem>Open: {stockInfo.open}</ListItem>
+          <ListItem>Close: {stockInfo.close}</ListItem>
+          <ListItem>High: {stockInfo.high}</ListItem>
+          <ListItem>Low: {stockInfo.low}</ListItem>
         </InfoList>
       ) : inputDate ? (
-        <div className="mt-50 slide-up-fade-in" id="no-result" data-testid="no-result">
+        <NotFound id="no-result" data-testid="no-result">
           No Results Found
-        </div>
+        </NotFound>
       ) : null}
     </div>
   );

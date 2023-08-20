@@ -1,6 +1,6 @@
 import React from "react";
 
-function InfoList({ children, rest }) {
+function List({ children, rest }) {
   return (
     <ul className="mt-50 slide-up-fade-in styled" {...rest}>
       {children}
@@ -8,4 +8,4 @@ function InfoList({ children, rest }) {
   );
 }
 
-export default InfoList; 
+export default List; 
